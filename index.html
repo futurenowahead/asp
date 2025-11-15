@@ -155,8 +155,8 @@ p {
     <body>
        <!-- Header -->
        <div class="navik-header header-shadow">
-        <div class="top">
-         <h2>AGATHIYAR SIDDHAR PEEDAM TRUST | &nbsp;&nbsp; <span class="loc-text">ராமேஸ்வரம் அருகில் உள்ளது</span></h2>
+        <div class="top"> 
+         <h2>AGATHIYAR SIDDHAR PEEDAM TRUST | &nbsp;&nbsp; <span class="loc-text" id="locText">ராமேஸ்வரம் அருகில் உள்ளது</span></h2>
      </div>
      <div class="container">
 
@@ -250,7 +250,7 @@ p {
       <img src="image\agathiyar\pg15 (1).jpg" alt="">
       <div class="info">
         <div class="banhner-content">
-          <h3>'நீ  நினைத்த செய்திகள் <br> உன்னை  வந்து சேரும்' <br>உன் வாழ்க்கை முழுமை பெற்றதே</h3>
+          <h3>'நீ  நினைத்த செய்திகள் <br> உன்னை  வந்து சேரும்' <br>உன் வாழ்க்கை முழுமை பெற்றதே'</h3>
           
       </div>
   </div>
@@ -491,6 +491,26 @@ Sage Agathiyar, revered as the embodiment of divine knowledge and cosmic balance
     
     </div>
  </footer>
+<script>
+    const loc = document.getElementById("locText");
+
+    loc.addEventListener("mouseenter", () => {
+        loc.textContent = "Located near Rameswaram";
+    });
+
+    loc.addEventListener("mouseleave", () => {
+        loc.textContent = "ராமேஸ்வரம் அருகில் உள்ளது";
+    });
+
+    // For mobile touch
+    loc.addEventListener("touchstart", () => {
+        loc.textContent = "Located near Rameswaram";
+    });
+
+    loc.addEventListener("touchend", () => {
+        loc.textContent = "ராமேஸ்வரம் அருகில் உள்ளது";
+    });
+</script>
 
 
     <!--Bootstrap JS -->
@@ -553,6 +573,7 @@ Sage Agathiyar, revered as the embodiment of divine knowledge and cosmic balance
 
 </body>
 </html>
+
 
 
 
